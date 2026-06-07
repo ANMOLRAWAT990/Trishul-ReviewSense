@@ -1,0 +1,14 @@
+Forum Introduction Post
+Subject: Introduction: Sentinaut - AI-Powered Guest Review Classifier
+
+Hi everyone,
+
+I am Anmol Rawat, and for my SIP 2026 project, I am developing "Sentinaut." This platform is designed for homestay and eco-tourism operators to automate the analysis of unstructured guest feedback.
+
+The tool allows users to input individual or batch reviews to receive sentiment classification, thematic tags, and AI-generated management responses.
+
+Tech Stack: React.js, Node.js/Express, MongoDB, and Gemini Flash API.
+
+Technical Challenge: One challenge I foresee is ensuring the LLM consistently returns valid, structured JSON for the frontend table, which I plan to address through strict schema prompting and validation.
+
+Looking forward to the program!

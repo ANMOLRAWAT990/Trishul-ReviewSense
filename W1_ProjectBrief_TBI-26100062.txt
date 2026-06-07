@@ -1,0 +1,16 @@
+App Name: Sentinaut
+
+One-Line Pitch: A web app that helps homestay staff classify guest reviews, identify feedback themes, and generate suggested management responses using AI.
+
+Target User: Homestay staff, managers, and small eco-tourism operators who receive reviews across platforms but do not have enough time to read, classify, and respond to each review manually. (29 words)
+
+Core Features (3-5):
+* Review Sentiment Classifier: Classifies each pasted guest review as positive, neutral, or negative.
+* Theme Tagging: Identifies the primary review theme such as food, host, location, cleanliness, value, or experience.
+* Batch Review Analysis: Allows staff to paste multiple reviews, one per line, and process them together.
+* Suggested Management Response: Generates a short polite response that staff can use or edit before replying to guests.
+* Results Table: Displays review, sentiment, theme, and suggested response in a clean table.
+
+AI Feature: I will use the Google Gemini Flash or Flash-Lite API because it has a free developer tier, is fast for text classification, and can generate structured JSON responses for sentiment, theme, and reply suggestions.
+
+Tech Stack: Frontend (React.js), Styling (Vanilla CSS), Backend (Node.js/Express), Database (MongoDB), Auth method (JWT), Deployment (Vercel + Render).
