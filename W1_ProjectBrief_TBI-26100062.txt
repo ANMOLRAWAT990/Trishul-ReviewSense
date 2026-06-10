@@ -1,16 +1,109 @@
-App Name: Sentinaut
+W1 PROJECT BRIEF
+Intern ID: TBI-26100062
+Name: Anmol Rawat
+Submission: Week 1 Project Deliverable
 
-One-Line Pitch: A web app that helps homestay staff classify guest reviews, identify feedback themes, and generate suggested management responses using AI.
+================================================================
+PROJECT NAME
+================================================================
+SentiNaut
 
-Target User: Homestay staff, managers, and small eco-tourism operators who receive reviews across platforms but do not have enough time to read, classify, and respond to each review manually. (29 words)
+================================================================
+SECTOR
+================================================================
+Homestay and Eco-tourism
 
-Core Features (3-5):
-* Review Sentiment Classifier: Classifies each pasted guest review as positive, neutral, or negative.
-* Theme Tagging: Identifies the primary review theme such as food, host, location, cleanliness, value, or experience.
-* Batch Review Analysis: Allows staff to paste multiple reviews, one per line, and process them together.
-* Suggested Management Response: Generates a short polite response that staff can use or edit before replying to guests.
-* Results Table: Displays review, sentiment, theme, and suggested response in a clean table.
+================================================================
+PROJECT SUMMARY
+================================================================
+SentiNaut is a role-based Reputation and Operations Management
+platform for homestays and mountain resorts that turns guest
+reviews into direct business actions. Staff paste reviews from
+any platform, and the system classifies sentiment, tags recurring
+themes, benchmarks performance against nearby competitors, and
+converts feedback patterns into trackable staff action items.
 
-AI Feature: I will use the Google Gemini Flash or Flash-Lite API because it has a free developer tier, is fast for text classification, and can generate structured JSON responses for sentiment, theme, and reply suggestions.
+With distinct dashboards for Owners, Managers, and Staff, every
+team member sees exactly what they need to act on, making
+reputation management a daily operational habit rather than a
+periodic manual effort.
 
-Tech Stack: Frontend (React.js), Styling (Vanilla CSS), Backend (Node.js/Express), Database (MongoDB), Auth method (JWT), Deployment (Vercel + Render).
+================================================================
+PROBLEM STATEMENT (ASSIGNED)
+================================================================
+AI-03 | Homestay Guest Review Sentiment Classifier (Web Tool)
+
+Context: Trishul Eco-Homestays has no capacity to read and
+categorize the volume of guest reviews it receives across
+platforms.
+
+Task: Build a web interface where staff can paste a guest review
+(or a batch of reviews, one per line) and receive:
+  1. A sentiment classification (positive/neutral/negative)
+  2. A primary theme tag (food, host, location, cleanliness,
+     value, experience)
+  3. A one-line suggested management response
+
+Deliverable: Functional review classifier tool (React or HTML/JS)
+and a test report showing accuracy on 20 real or simulated
+reviews.
+
+================================================================
+CORE FEATURES
+================================================================
+1. ROLE-BASED ACCESS CONTROL
+   Distinct dashboards for Owners (analytics and competitor
+   benchmarking), Managers (review moderation and action tracker
+   management), and Staff (review submission and guest checkout
+   logging). Every team member sees only what is relevant to
+   their role.
+
+2. SENTIMENT CLASSIFICATION AND THEME TAGGING
+   Single and batch review processing returning sentiment
+   (Positive, Neutral, Negative), confidence level, primary
+   theme tag (Food, Host, Location, Cleanliness, Value,
+   Experience), and an AI-generated suggested management reply
+   per review — covering the full analytical need in one pass.
+
+3. OPERATIONAL SUGGESTIONS AND ACTION TRACKER
+   AI analyzes full batch patterns to surface root causes and
+   priority action items that automatically become trackable
+   staff tasks with status flow (Pending, In Progress, Done,
+   Verified), staying open until new reviews confirm the issue
+   is resolved.
+
+4. COMPETITOR BENCHMARKING
+   Staff paste reviews from nearby competing properties and
+   SentiNaut identifies where competitors consistently win or
+   lose, giving owners clear gaps to exploit and differentiate
+   their property in a crowded market.
+
+5. REVIEW REQUEST GENERATOR
+   Staff log departing guest details at checkout and SentiNaut
+   generates a personalized review request message with a direct
+   link to the platform they booked from (Google, Booking.com,
+   TripAdvisor), ensuring the review lands where it matters most
+   for that property's visibility.
+
+================================================================
+AI FEATURE
+================================================================
+Two-layer classification pipeline where a rule-based keyword
+pre-classifier handles high-confidence reviews instantly and
+escalates ambiguous reviews to Gemini Flash (Google AI free tier)
+for nuanced sentiment analysis and theme detection. A second
+aggregate Gemini call processes the full batch to generate
+operational suggestions and actionable staff tasks, while token
+compression on raw review text reduces API cost and latency
+across both layers.
+
+================================================================
+TECH STACK
+================================================================
+Frontend:  React JS
+Backend:   Python / FastAPI
+Database:  MongoDB via Atlas
+AI:        Gemini Flash (Google AI free tier)
+Local Dev: Ollama (llama3)
+Deployment: Vercel (frontend) / Render (backend)
+
