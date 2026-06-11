@@ -99,5 +99,5 @@ Set `USE_GEMINI=false` to use local Ollama during development.
 | Field | Details |
 |---|---|
 | Intern ID | TBI-26100062 |
-| Name | Anmol Bobby Rawat |
+| Name | Anmol Rawat |
 | Domain | Homestay and Eco-tourism |
