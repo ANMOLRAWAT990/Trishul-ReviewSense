@@ -4,7 +4,6 @@
 
 SentiNaut turns guest reviews into direct business actions. Staff paste reviews from any platform and the system classifies sentiment, tags recurring themes, benchmarks performance against nearby competitors, and converts feedback patterns into trackable staff action items — all working together to maximize positive review volume, reduce repeat complaints, and improve search visibility over time.
 
-Built as part of the TBI Fullstack Development Internship (2025), piloted for the Homestay and Eco-tourism domain.
 
 ---
 
